@@ -147,18 +147,18 @@ def find_orders_by_user_id(user_id):
 # Menu Functions
 def show_admin_menu():
     print("------- Admin Menu -------")
-    print("1. Add new food item")
-    print("2. Edit food item")
-    print("3. View food items")
-    print("4. Remove food item")
+    print("1) Add new food item")
+    print("2) Edit the food item")
+    print("3) View the food items")
+    print("4) Remove the food item")
     print("--------------------------")
 
 def show_user_menu(user):
     print("------- User Menu --------")
-    print("1. Place new order")
-    print("2. Order history")
-    print("3. Update profile")
-    print("4. Logout")
+    print("1) Place new order")
+    print("2) Order history")
+    print("3) Update profile")
+    print("4) Logout")
     print("--------------------------")
     
     choice = int(input("Enter your choice: "))
@@ -178,16 +178,16 @@ def show_user_menu(user):
 def main():
     while True:
         print("------- Food Ordering App -------")
-        print("1. Admin Login")
-        print("2. User Login")
-        print("3. User Registration")
-        print("4. Exit")
+        print("1) Admin Login")
+        print("2) User Login")
+        print("3) User Registration")
+        print("4) Exit")
         print("---------------------------------")
 
         choice = int(input("Enter your choice: "))
         if choice == 1:
             admin_password = input("Enter admin password: ")  
-            if admin_password == "admin123":  
+            if admin_password == "admin_user":  
                 show_admin_menu()
                 admin_choice = int(input("Enter your choice: "))
                 if admin_choice == 1:
